@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+Home - Track Your Weight
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<header class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 text-white">Welcome to Track Your Weight</h1>
+        <p class="lead text-white">Track your progress, achieve your goals, and live a healthier life.</p>
+        <a href="{% url 'adWeight' %}" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+</header>
+
+<!-- Features Section -->
+<section class="features-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                <h3>Track Progress</h3>
+                <p>Monitor your weight changes over time with our easy-to-use tracking tools.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-heartbeat fa-3x mb-3 text-primary"></i>
+                <h3>Healthy Tips</h3>
+                <p>Receive personalized tips and recommendations for a healthier lifestyle.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                <h3>Community Support</h3>
+                <p>Join our community and get support from others on the same journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
